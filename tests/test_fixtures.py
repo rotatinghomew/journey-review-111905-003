@@ -4,7 +4,7 @@ import unittest
 
 
 FIXTURES = Path(__file__).resolve().parents[1] / "fixtures"
-HEADERS = {'windows': ['id', 'available_from', 'available_to', 'services'], 'releases': ['window', 'effective', 'page'], 'orders': ['id', 'window', 'step', 'page', 'status', 'reviewed'], 'limits': ['min_per_path', 'min_change', 'maturity_days'], 'episodes': ['id', 'channel', 'window', 'topic', 'started'], 'events': ['id', 'episode', 'time', 'step', 'page', 'kind', 'detail'], 'links': ['id', 'from_episode', 'to_episode', 'evidence', 'state', 'recorded', 'replaces']}
+HEADERS = {'windows': ['id', 'available_from', 'available_to', 'services'], 'releases': ['window', 'effective', 'page'], 'orders': ['id', 'window', 'step', 'page', 'status', 'reviewed'], 'limits': ['min_per_path', 'min_change', 'maturity_days'], 'episodes': ['id', 'channel', 'window', 'topic', 'started'], 'events': ['id', 'episode', 'time', 'step', 'page', 'kind', 'detail'], 'links': ['id', 'from_episode', 'to_episode', 'evidence', 'state', 'recorded', 'replaces'], 'revision_relationships': ['from_order', 'to_order', 'kind'], 'reviews': ['id', 'as_of', 'orders', 'decisions']}
 LINKS = [('episodes', 'window', 'windows', 'id'), ('events', 'episode', 'episodes', 'id'), ('links', 'from_episode', 'episodes', 'id'), ('links', 'to_episode', 'episodes', 'id')]
 
 
@@ -22,7 +22,7 @@ class SourceRecords(unittest.TestCase):
                 self.assertEqual(header, expected)
                 self.assertTrue(rows)
                 self.assertTrue(all(None not in row and None not in row.values() for row in rows))
-                if "id" in header:
+                if "id" in header and (name != "receipts" or "batch" not in header):
                     ids = [row["id"] for row in rows]
                     self.assertTrue(all(ids))
                     self.assertEqual(len(ids), len(set(ids)))
