@@ -1,0 +1,4 @@
+id,station,block,arm,assigned_at,rule_version
+A1,S1,B1,new,08:00,R1
+A2,S1,B1,old,08:00,R1
+A3,S2,B2,new,08:10,R1

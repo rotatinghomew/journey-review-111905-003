@@ -1,7 +1,0 @@
-order,content_version,last_step,continuation
-R1,fields-1,材料校验,desk
-R1,fields-2,确认提交,old
-R3,fields-1,材料校验,old
-R3,fields-2,确认提交,desk
-R4,fields-2,确认提交,new
-R4,fields-1,材料校验,desk

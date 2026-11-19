@@ -1,3 +1,0 @@
-from_order,to_order,kind
-R1,R3,exclusive
-R4,R1,requires

@@ -1,0 +1,4 @@
+id,token,draft,assigned_arm,actual_version,complete_at,followup_due
+J1,T1,D1,new,old,09:00,10:00
+J2,T2,D2,new,new,,10:00
+J3,T3,D3,old,old,09:20,10:00
