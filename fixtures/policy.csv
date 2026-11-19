@@ -1,0 +1,3 @@
+id,procedure,support,min_arm,completion_drop,extra_increase,legacy_proof,carry_to_new
+Q1,address,assisted,12,0.05,0.1,review_slip,yes
+Q2,eligibility,self,12,0.05,0.1,paper_seal,no

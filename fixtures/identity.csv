@@ -1,0 +1,9 @@
+id,event,assignment,state,received,supersedes
+X1,JX,A1-1-04,possible,2026-10-05T08:00,
+X2,JX,A1-1-07,possible,2026-10-05T08:00,
+X3,JY,A1-1-04,possible,2026-10-06T08:00,
+X4,JY,A1-1-08,possible,2026-10-06T08:00,
+X5,JZ,A2-3-01,possible,2026-10-06T09:00,
+X6,JZ,A2-3-02,possible,2026-10-06T09:00,
+X7,JZ,A2-3-01,confirmed,2026-10-07T10:00,X5
+X8,JZ,A2-3-02,ruled_out,2026-10-07T10:00,X6

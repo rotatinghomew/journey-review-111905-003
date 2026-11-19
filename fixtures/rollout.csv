@@ -1,3 +1,7 @@
-station,window,version,staff,capacity,confirmed_drafts
-S1,W1,new,U1,2,D1
-S2,W1,old,U1,2,D2
+id,station,policy,proposed_start,kind,received,prior
+L1,S1,Q2,2026-10-07T12:30,proposal,2026-10-06T13:00,
+L2,S2,Q2,2026-10-07T12:30,proposal,2026-10-06T13:00,
+L3,S1,Q1,2026-10-07T12:30,proposal,2026-10-06T13:00,
+L4,S1,Q1,2026-10-07T12:30,enabled,2026-10-07T09:30,L3
+L5,S1,Q2,2026-10-07T12:30,enabled,2026-10-07T09:31,L1
+L6,S1,Q2,2026-10-07T12:30,paused,2026-10-07T10:11,L5

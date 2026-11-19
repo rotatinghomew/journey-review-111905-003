@@ -1,0 +1,6 @@
+id,station,procedure,support,legacy_proof,start,end,minutes,skill
+D1,S1,eligibility,self,paper_seal,2026-10-07T13:00,2026-10-07T14:00,45,mobile
+D2,S2,eligibility,self,paper_seal,2026-10-07T13:00,2026-10-07T14:00,45,mobile
+D3,S1,address,assisted,review_slip,2026-10-07T13:00,2026-10-07T14:00,30,desk
+D4,S3,eligibility,self,paper_seal,2026-10-07T14:00,2026-10-07T15:00,30,mobile
+D5,S2,address,assisted,review_slip,2026-10-07T13:00,2026-10-07T14:00,30,desk
