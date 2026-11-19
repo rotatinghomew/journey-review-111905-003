@@ -4,8 +4,8 @@ import unittest
 
 
 FIXTURES = Path(__file__).resolve().parents[1] / "fixtures"
-HEADERS = {'windows': ['id', 'available_from', 'available_to', 'services'], 'releases': ['window', 'effective', 'page'], 'orders': ['id', 'window', 'step', 'page', 'status', 'reviewed'], 'limits': ['min_per_path', 'min_change', 'maturity_days'], 'episodes': ['id', 'channel', 'window', 'topic', 'started'], 'events': ['id', 'episode', 'time', 'step', 'page', 'kind', 'detail'], 'links': ['id', 'from_episode', 'to_episode', 'evidence', 'state', 'recorded', 'replaces'], 'revision_relationships': ['from_order', 'to_order', 'kind'], 'reviews': ['id', 'as_of', 'orders', 'decisions']}
-LINKS = [('episodes', 'window', 'windows', 'id'), ('events', 'episode', 'episodes', 'id'), ('links', 'from_episode', 'episodes', 'id'), ('links', 'to_episode', 'episodes', 'id')]
+HEADERS = {'compatibility': ['order', 'content_version', 'last_step', 'continuation'], 'cutovers': ['id', 'order', 'desk', 'start', 'end', 'instructed', 'actual_withdrawn', 'confirmed', 'desk_slots', 'old_until'], 'drafts': ['id', 'episode', 'content_version', 'last_step', 'saved', 'expires'], 'episodes': ['id', 'channel', 'window', 'topic', 'started'], 'events': ['id', 'episode', 'time', 'step', 'page', 'kind', 'detail'], 'limits': ['min_per_path', 'min_change', 'maturity_days'], 'links': ['id', 'from_episode', 'to_episode', 'evidence', 'state', 'recorded', 'replaces'], 'orders': ['id', 'window', 'step', 'page', 'status', 'reviewed'], 'releases': ['window', 'effective', 'page'], 'reviews': ['id', 'as_of', 'orders', 'decisions'], 'revision_relationships': ['from_order', 'to_order', 'kind'], 'windows': ['id', 'available_from', 'available_to', 'services']}
+LINKS = [('episodes', 'window', 'windows', 'id'), ('events', 'episode', 'episodes', 'id'), ('links', 'from_episode', 'episodes', 'id'), ('links', 'to_episode', 'episodes', 'id'), ('drafts', 'episode', 'episodes', 'id'), ('compatibility', 'order', 'orders', 'id'), ('cutovers', 'order', 'orders', 'id'), ('cutovers', 'desk', 'windows', 'id')]
 
 
 def read(name):
